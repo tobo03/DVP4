@@ -6,10 +6,52 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
+@prefix amazonont: <https://purl.archive.org/purl/amazon/ontology#>
 
 ##########
 
 # Metadata
 
 ##########
+
+<https://raw.githubusercontent.com/tobo03/DVP4/main/Ontology/amazon_ontology.ttl>
+    a owl:Ontology ;
+    dc:title "The Amazon onotology"@en ;
+    dc:description "The Amazon ontology provides context to concepts and entities found in the Amazon sports and outdoors dataset"@en ;
+    ns0:preferredNamespacePrefix "amazonont" ;
+    ns0:preferredNamespaceUri "https://purl.archive.org/purl/amazon/ontology#"
+    dc:modified "2023-05-03"^^xsd:date ;
+    dc:contributor "Tobias Pedersen", "Thor Skatka Jensen", "Dat Tan Luong", "Adám Rumi", "Andreas Esben Skaarup Hansen" ;
+    cc:license <https://mit-license.org> .
+
+##########
+
+# Classes definitions
+
+##########
+
+<https://raw.githubusercontent.com/tobo03/DVP4/main/Ontology/amazon_ontology.ttl#WikidataCategory>
+    a owl:Class ;
+    rdfs:comment "A Wikidata Category is a class assigned to objects which can be linked to wikidata from the amazon sports and outdoors dataset."@en ;
+    rdfs:label "Wikidata Category"@en ;
+
+<https://raw.githubusercontent.com/tobo03/DVP4/main/Ontology/amazon_ontology.ttl#AmazonCategory>
+    a owl:Class ;  
+    rdfs:comment "A Amazon Category is a class assigned to objects which cannot be linked to wikidata and are therefore defined in the Amazon ontology."@en ;
+    rdfs:label "Amazon Category"@en ;
+
+
+##########
+
+# Property definitions
+
+##########
+
+<https://purl.archive.org/purl/amazon/ontology#Price>
+    a owl:DataTypeProperty ;
+    rdfs:comment "Specifies the price of a <Product>."@en ;
+    rdfs:domain schema:product ;
+    rdfs:label "Price"@en ;
+    rdfs:range xsd:double .
+
 
