@@ -47,23 +47,23 @@
 
 ##########
 
-<https://purl.archive.org/purl/amazon/ontology#Price>
+<https://purl.archive.org/purl/amazon/ontology#price>
     a owl:DataTypeProperty ;
     rdfs:comment "Specifies the price of a <Product>."@en ;
     rdfs:domain schema:product ;
-    rdfs:label "Price"@en ;
+    rdfs:label "price"@en ;
     rdfs:range XSD:double .
 
-<https://purl.archive.org/purl/amazon/ontology#Also_buy>
+<https://purl.archive.org/purl/amazon/ontology#also_buy>
     a owl:DataTypeProperty ;
     rdfs:comment "Specifies products that are bought alongside a <Product>"@en ;
     rdfs:domain schema:product ;
-    rdfs:label "Also_buy"@en ;
+    rdfs:label "also_buy"@en ;
     rdfs:range schema:product ;
 
-<https://purl.archive.org/purl/amazon/ontology#Also_view>
+<https://purl.archive.org/purl/amazon/ontology#also_view>
     a owl:DataTypeProperty ;
     rdfs:comment "Specifies products that are viewed alongside a <Product>"@en ;
     rdfs:domain schema:product ;
-    rdfs:label "Also_view"@en ;
+    rdfs:label "also_view"@en ;
     rdfs:range schema:product ;
