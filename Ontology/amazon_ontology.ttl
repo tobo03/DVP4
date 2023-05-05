@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
-@prefix amazonont: <https://purl.archive.org/purl/amazon/ontology#>
+@prefix amazonont <https://purl.archive.org/purl/amazon/ontology#>
 
 ##########
 
@@ -52,6 +52,18 @@
     rdfs:comment "Specifies the price of a <Product>."@en ;
     rdfs:domain schema:product ;
     rdfs:label "Price"@en ;
-    rdfs:range xsd:double .
+    rdfs:range XSD:double .
 
+<https://purl.archive.org/purl/amazon/ontology#also_buy>
+    a owl:DataTypeProperty ;
+    rdfs:comment "Specifies products that are bought alongside a <Product>"@en ;
+    rdfs:domain schema:product ;
+    rdfs:label "Also_buy"@en ;
+    rdfs:range schema:product ;
 
+<https://purl.archive.org/purl/amazon/ontology#also_view>
+    a owl:DataTypeProperty ;
+    rdfs:comment "Specifies products that are viewed alongside a <Product>"@en ;
+    rdfs:domain schema:product ;
+    rdfs:label "Also_view"@en ;
+    rdfs:range schema:product ;
