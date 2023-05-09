@@ -67,3 +67,10 @@
     rdfs:domain schema:product ;
     rdfs:label "also_view"@en ;
     rdfs:range schema:product ;
+
+<https://purl.archive.org/purl/amazon/ontology#unixTime>
+    a owl:DataTypeProperty ;
+    rdfs:comment "Specifies the time a <Review> is created using the unixtime format."@en ;
+    rdfs:domain schema:review ;
+    rdfs:label "unixTime"@en ;
+    rdfs:range XSD:integer ;
