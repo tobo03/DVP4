@@ -26,20 +26,15 @@
 
 ##########
 
-# Classes definitions
+# Class definitions
 
 ##########
 
-<https://raw.githubusercontent.com/tobo03/DVP4/main/Ontology/amazon_ontology.ttl#WikidataCategory>
-    a owl:Class ;
-    rdfs:comment "A Wikidata Category is a class assigned to objects which can be linked to wikidata from the amazon sports and outdoors dataset."@en ;
-    rdfs:label "Wikidata Category"@en ;
 
 <https://raw.githubusercontent.com/tobo03/DVP4/main/Ontology/amazon_ontology.ttl#AmazonCategory>
     a owl:Class ;  
     rdfs:comment "A Amazon Category is a class assigned to objects which cannot be linked to wikidata and are therefore defined in the Amazon ontology."@en ;
     rdfs:label "Amazon Category"@en ;
-
 
 ##########
 
@@ -68,9 +63,3 @@
     rdfs:label "also_view"@en ;
     rdfs:range schema:product ;
 
-<https://purl.archive.org/purl/amazon/ontology#unixTime>
-    a owl:DataTypeProperty ;
-    rdfs:comment "Specifies the time a <Review> is created using the unixtime format."@en ;
-    rdfs:domain schema:review ;
-    rdfs:label "unixTime"@en ;
-    rdfs:range XSD:integer ;
