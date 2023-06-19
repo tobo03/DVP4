@@ -9,7 +9,7 @@ def authorTTL(df, graph):
     #Prepping the dataframe
     df = df[['index','reviewerID']]
     df = df.rename(columns={'index' : 'source', 'reviewerID' : 'target'})
-    df['edge'] = len(df) * ['datePublished']
+    df['edge'] = len(df) * ['authorOf']
     df['source'] = df['source'].astype(str)
     df['target'] = df['target'].astype(str)
 
